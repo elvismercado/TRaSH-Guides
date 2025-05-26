@@ -2,7 +2,9 @@
   "trash_id": "b6832f586342ef70d9c128d40c07b872",
   "trash_scores": {
     "default": -10000,
-    "french-multi": 0
+    "french-multi-vf": 0,
+    "french-multi-vo": 0,
+    "german": -35000
   },
   "name": "Bad Dual Groups",
   "includeCustomFormatWhenRenaming": false,
@@ -188,6 +190,15 @@
       }
     },
     {
+      "name": "tokar86a",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(tokar86a)$"
+      }
+    },
+    {
       "name": "TvR",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -248,6 +259,24 @@
       "required": false,
       "fields": {
         "value": "^(ZNM)$"
+      }
+    },
+    {
+      "name": "BiOMA",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(BiOMA)$"
+      }
+    },
+    {
+      "name": "sh4down",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(sh4down)$"
       }
     }
   ]

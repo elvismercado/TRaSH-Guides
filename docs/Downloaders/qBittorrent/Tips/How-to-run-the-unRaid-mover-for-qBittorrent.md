@@ -1,14 +1,10 @@
 # unRAID Mover and qBittorrent
 
-When you make use of the unRAID cache drive for your `/data/torrents` share, and the torrents in qBittorrent are still seeding, the mover can't move files since they are still in use.
+When you use the unRAID cache drive for your `/data/torrents` share, and the torrents in qBittorrent are actively seeding, the unRAID mover cannot move files, or the hard link will break since they are still in use.
 
 Using the following instructions will allow you to move the files using the qBittorrent API.
 
-!!! abstract "Workflow Rules"
-
-    1. Pause torrents in a specified age range that reside on your cache drive.
-    1. Run the unRAID mover.
-    1. Resume the torrents after the mover has completed.
+--8<-- "includes/downloaders/mover-workflow.md"
 
 !!! warning
 
@@ -29,15 +25,15 @@ Big Thnx to [bobokun](https://github.com/bobokun){:target="\_blank" rel="noopene
 
 ### Plugins
 
-Install the following Plugins.
+Install the following plugins:
 
 - User Scripts
-- NerdTools
-    - python3 <sup>(_1_)</sup>
-    - python-setuptools <sup>(_1_)</sup>
-    - python-pip <sup>(_1_)</sup>
+- You will need to manually install the following packages for the correct Slackware version from [https://packages.slackware.com/](https://packages.slackware.com/){:target="\_blank" rel="noopener noreferrer"}
+    - python3
+    - python-setuptools
+    - python-pip
 
-!!! info "<sup>(_1_)</sup> These need to be installed from NerdTools."
+--8<-- "includes/downloaders/nerdtools-replacement-package-slackware.md"
 
 ---
 
